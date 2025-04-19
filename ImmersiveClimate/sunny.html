@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sunny Weather (A‑Frame 1.7)</title>
+
+    <!-- ① Load A‑Frame exactly as in the docs -->
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+
+    <!-- ② THEN load the environment component -->
+    <script src="https://unpkg.com/aframe-environment-component@1.5.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <!-- Blue sky, white horizon, distant sun‑light -->
+      <a-entity environment="
+         preset: default;
+         skyType: atmosphere;
+         skyColor: #87CEEB;
+         horizonColor: #B0E0E6;
+         lighting: distant;
+         lightPosition: 0 1 -0.5;">
+      </a-entity>
+
+      <!-- Desktop look / WASD + VR ready -->
+      <a-entity camera look-controls wasd-controls position="0 1.6 3"></a-entity>
+    </a-scene>
+  </body>
+</html>

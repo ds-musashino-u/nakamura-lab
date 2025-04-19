@@ -1,0 +1,15 @@
+{
+  "name": "nodejs_https",
+  "version": "1.0.0",
+  "description": "Node.JSを用いてHTTPS通信",
+  "main": "simple_index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
